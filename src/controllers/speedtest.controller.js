@@ -30,8 +30,18 @@ const getUploadSpeed = asyncHandler( async( req,res) => {
     })
 })
 
+const test = asyncHandler( async( req,res) => {
+    res
+    .status(200)
+    .json({
+        success: true,
+        message: "Testing bot",
+    })
+})
+
 export {
     getDownloadSpeed,
-    getUploadSpeed
+    getUploadSpeed,
+    test
 
 }
